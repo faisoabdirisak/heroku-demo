@@ -435,26 +435,7 @@ body.dark .search-field i{
     .slider .slide .info p{
       font-size: 0.9em;
     }
-    /* .sub{
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        flex-wrap: wrap;
-        
-    }
-    .cont2 ul li{
-        line-height: 1px;
-        font-size: 1px;
-              
-          }
-          .cont2 div img{
-              width: 2px;
-                    
-                }
-    .cont .read{
-        font-size: 2px;
-        width: 20px;
-    } */
+   
   }
 
   section #subject{
