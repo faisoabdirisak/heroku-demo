@@ -1,12 +1,15 @@
 <!-- {% extends 'main.html' %} -->
 {% load static %}
 {% block content %}
+<div class="full-screen-container">
+  <div class="faisoo">
+    <a class="btn btn-dark" href="{% url 'account' %}"><i class=""></i>Back</a>
 <div class="col d-flex justify-content-center">
     
-  <div class="card mt-10 " style="width: 33rem;">
-    <a class="btn btn-dark" href="{% url 'account' %}"><i class="fas fa-chevron-left prev-btn"></i></a>
+  <div class="" style="">
+    <!-- <a class="btn btn-dark" href="{% url 'account' %}"><i class="fas fa-chevron-left prev-btn"></i></a> -->
   <h3 class="login-title">Edit Your Details </h3>
-  <a class="btn btn-dark" href="{% url 'account' %}"><i class=""></i>Back</a>
+ 
   <form method="POST" action="{% url 'edit-account' %}" enctype="multipart/form-data">
     {% csrf_token %}
     {% for field in form %}
@@ -20,5 +23,7 @@
 </div>
 </div>
 </div>
+</div>
+
 
 {% endblock content %}
