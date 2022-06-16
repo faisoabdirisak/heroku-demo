@@ -1000,7 +1000,7 @@ footer{
   padding: 10px 30px;
   width: 100%;
   border-radius: 5px; 
-  background-color: hsla(201, 100%, 50%, 0.1);
+  background-color: #0D6EFD;
   border: 1px solid hsl(201, 100%, 50%);
   outline: none;
   font-size: 1.5em;
@@ -1010,13 +1010,13 @@ footer{
   cursor: pointer;
 }
 
-.login-button:hover {
+/* .login-button:hover {
   background-color: hsla(201, 100%, 50%, 0.3)
 }
 
 .login-button:focus {
   background-color: hsla(201, 100%, 50%, 0.5)
-}
+} */
 
 .auth__alternative{
   padding: 20px;
