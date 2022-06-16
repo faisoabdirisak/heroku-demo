@@ -1,3 +1,4 @@
+
 /* navbar */
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
@@ -310,7 +311,7 @@ body.dark .search-field i{
 .slider{
     position: relative;
     background: #000116;
-    width: 97%;
+    width: 99%;
     min-height: 500px;
     margin: 20px;
     overflow: hidden;
@@ -435,26 +436,7 @@ body.dark .search-field i{
     .slider .slide .info p{
       font-size: 0.9em;
     }
-    /* .sub{
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        flex-wrap: wrap;
-        
-    }
-    .cont2 ul li{
-        line-height: 1px;
-        font-size: 1px;
-              
-          }
-          .cont2 div img{
-              width: 2px;
-                    
-                }
-    .cont .read{
-        font-size: 2px;
-        width: 20px;
-    } */
+   
   }
 
   section #subject{
@@ -608,24 +590,24 @@ font-size: 0px;
         text-align: center;
       }
       
-      .contact .row{
+      .contact .rows{
         display: flex;
         align-items: center;
         justify-content: center;
         padding:5rem 0;
       }
       
-      .contact .row .image img{
-        width: 50vw;
-        height:70vh;
+      .contact .rows.image img{
+        width: 40vw;
+        height:60vh;
       }
       
-      .contact .row .form-container{
-        width:50%;
-        padding-right: 6rem;
+      .contact .rows .form-container{
+        width:100%;
+        padding-right: rem;
       }
       
-      .contact .row .form-container input, textarea{
+      .contact .rows .form-container input, textarea{
         height:4rem;
         width:100%;
         background:#fff;
@@ -638,18 +620,18 @@ font-size: 0px;
         transition: .2s linear;
       }
       
-      .contact .row .form-container input:focus, textarea:focus{
+      .contact .rows .form-container input:focus, textarea:focus{
         border:.2rem solid var(--pink);
       }
       
-      .contact .row .form-container textarea{
+      .contact .rows .form-container textarea{
         height:20rem;
         border-radius: 1rem;
         padding:1rem; 
         resize: none;
       }
       
-      .contact .row .form-container input[type="submit"]{
+      .contact .rows .form-container input[type="submit"]{
         width:17rem;
         background:#00E77F;
         color:#fff;
@@ -658,23 +640,23 @@ font-size: 0px;
         transition: .2s;
       }
       
-      .contact .row .form-container input[type="submit"]:hover{
+      .contact .rows .form-container input[type="submit"]:hover{
         background:#004182;
         color:#Fff;
         border:.2rem solid var(--pink);
       }
     
       @media (max-width:768px){
-        .contact .row{
+        .contact .rows{
             flex-flow: column;
           }
         
-          .contact .row .image img{
+          .contact .rows .image img{
             height:50vh;
             width:90vw;
           }
         
-          .contact .row .form-container{
+          .contact .rows .form-container{
             width:90%;
             padding:0;
           }
@@ -833,7 +815,7 @@ footer{
     }
 
     /* search */
-    .search{
+    /* .search{
       display: grid;
 	    place-items: center
     }
@@ -926,7 +908,7 @@ footer{
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       transition: all 0.3s ease-in-out;
-    }
+    } */
 
     /* login */
 .full-screen-container {
@@ -942,7 +924,7 @@ footer{
 
 .faisoo{
   margin-top: 900px;
-  background-color: #c6ebfd;
+  background-color: #DEF4FF;
   padding: 50px 30px;
   min-width: 400px;
   width: 50%;
@@ -951,7 +933,7 @@ footer{
 
 
 .login-container {
-  background-color: #c6ebfd;
+  background-color: #DEF4FF;
   margin-top: 170px;
   padding: 50px 30px;
   min-width: 400px;
@@ -1000,11 +982,11 @@ footer{
   padding: 10px 30px;
   width: 100%;
   border-radius: 5px; 
-  background-color: #0D6EFD;
+  background-color: #2D80FA;
   border: 1px solid hsl(201, 100%, 50%);
   outline: none;
   font-size: 1.5em;
-  color: white;
+  color:white;
   font-weight: lighter;
   margin-top: 20px;
   cursor: pointer;
@@ -1025,38 +1007,3 @@ footer{
 #act{
   color: #fff;
 }
-
-
-#scroll-top{
-  position: fixed;
-  top:-120%;
-  right:2rem;
-  padding:.5rem 1.5rem;
-  font-size: 4rem;
-  background:var(--red);
-  color:#fff;
-  border-radius: .5rem;
-  transition: 1s linear;
-  z-index: 1000;
-}
-
-#scroll-top.active{
-  top:calc(100% - 12rem)
-}
-
-.loader-container{
-  position: fixed;
-  top:0; left:0;
-  z-index: 10000;
-  background:#fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:100%;
-  width:100%;
-}
-
-.loader-container.fade-out{
-  top:-120%;
-}
-
