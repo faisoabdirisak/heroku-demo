@@ -21,7 +21,7 @@
           <label>Password</label>
           <input type="password">
         </div> -->
-        <button type="submit" class="login-button">Sign In</button>
+        <button type="submit" class=" btn btn-primary login-button">Sign In</button>
       </form>
       <div class="auth__alternative">
         <p>Already have an Account?</p>
@@ -33,7 +33,6 @@
 
   <div class="full-screen-container">
     <div class="login-container">
-      
       <h3 class="login-title">Login User</h3>
       <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}
@@ -45,8 +44,8 @@
           <label>Password</label>
           <input type="password" name="password" >
         </div>
-        <button type="submit" class="login-button">Sign In</button>
-        <a href="{% url 'reset_password' %}">Forget Password?</a>
+        <button type="submit" class=" btn btn-primary login-button">Sign In</button>
+        <a href="">Forget Password?</a>
       </form>
       <div class="auth__alternative">
         <p>Don’t have an Account?</p>
