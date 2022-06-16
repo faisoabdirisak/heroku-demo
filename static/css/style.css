@@ -590,24 +590,24 @@ font-size: 0px;
         text-align: center;
       }
       
-      .contact .rows{
+      .contact .row{
         display: flex;
         align-items: center;
         justify-content: center;
         padding:5rem 0;
       }
       
-      .contact .rows.image img{
+      .contact .row.image img{
         width: 40vw;
         height:60vh;
       }
       
-      .contact .rows .form-container{
+      .contact .row .form-container{
         width:100%;
         padding-right: rem;
       }
       
-      .contact .rows .form-container input, textarea{
+      .contact .row .form-container input, textarea{
         height:4rem;
         width:100%;
         background:#fff;
@@ -620,43 +620,43 @@ font-size: 0px;
         transition: .2s linear;
       }
       
-      .contact .rows .form-container input:focus, textarea:focus{
+      .contact .row .form-container input:focus, textarea:focus{
         border:.2rem solid var(--pink);
       }
       
-      .contact .rows .form-container textarea{
+      .contact .row .form-container textarea{
         height:20rem;
         border-radius: 1rem;
         padding:1rem; 
         resize: none;
       }
       
-      .contact .rows .form-container input[type="submit"]{
+      .contact .row .form-container input[type="submit"]{
         width:17rem;
-        background:#00E77F;
+        /* background:#00E77F; */
         color:#fff;
         cursor: pointer;
         font-size: 2rem;
         transition: .2s;
       }
       
-      .contact .rows .form-container input[type="submit"]:hover{
+      .contact .row .form-container input[type="submit"]:hover{
         background:#004182;
         color:#Fff;
         border:.2rem solid var(--pink);
       }
     
       @media (max-width:768px){
-        .contact .rows{
+        .contact .row{
             flex-flow: column;
           }
         
-          .contact .rows .image img{
+          .contact .row .image img{
             height:50vh;
             width:90vw;
           }
         
-          .contact .rows .form-container{
+          .contact .row .form-container{
             width:90%;
             padding:0;
           }
