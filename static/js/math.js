@@ -215,3 +215,67 @@ $(function () {
 });
   
   
+
+
+
+
+
+function bor(){
+  var bor = document.getElementById('bor');
+  bor.play();
+}
+
+function scanner(){
+  var scanner = document.getElementById('scanner');
+  scanner.play();
+}
+
+function pen(){
+  var pen = document.getElementById('pen');
+  pen.play();
+}
+
+function head(){
+  var head = document.getElementById('head');
+  head.play();
+}
+
+function web(){
+  var web = document.getElementById('web');
+  web.play();
+}
+
+function printer(){
+  var printer = document.getElementById('printer');
+  printer.play();
+}
+
+function speak(){
+  var speak = document.getElementById('speak');
+  speak.play();
+}
+
+function ups(){
+  var ups = document.getElementById('ups');
+  ups.play();
+}
+
+function cpu(){
+  var cpu = document.getElementById('cpu');
+  cpu.play();
+}
+
+function mouse(){
+  var mouse = document.getElementById('mouse');
+  mouse.play();
+}
+
+function mon(){
+  var mon = document.getElementById('mon');
+  mon.play();
+}
+
+function key(){
+  var key = document.getElementById('key');
+  key.play();
+}
