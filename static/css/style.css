@@ -442,10 +442,11 @@ body.dark .search-field i{
   section #subject{
     height: 100vh;
 }
-.sub{
+.subje{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     
 }
@@ -1040,4 +1041,8 @@ footer{
 
 .loader-container.fade-out{
   top:-120%;
+}
+
+.numbers{
+  margin-top: 70px;
 }
