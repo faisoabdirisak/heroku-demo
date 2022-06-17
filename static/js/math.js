@@ -156,6 +156,29 @@ function triangle(){
   my_sound.play();
 }
 
+
+
+// 3d shapes
+function cone(){
+  var cone = document.getElementById('cone');
+  cone.play();
+}
+
+function cylinder(){
+  var cylinder = document.getElementById('cylinder');
+  cylinder.play();
+}
+
+function cube(){
+  var cube = document.getElementById('cube');
+  cube.play();
+}
+
+function sphere(){
+  var sphere = document.getElementById('sphere');
+  sphere.play();
+}
+
 //  animate addition results
 $(function () {
   $("#Add").click(function () { 

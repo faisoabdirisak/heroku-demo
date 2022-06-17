@@ -1,9 +1,9 @@
-
+/* 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 h1, h4, .col-md-3>p,h5{
     text-align: center;
     font-weight: bolder;
@@ -24,7 +24,7 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
 } */
 /* colors */
-.colors{
+/* .colors{
     margin-top: 40px;
 }
 .myColor{
@@ -44,7 +44,7 @@ h1, h4, .col-md-3>p,h5{
     background-color:red;
     
     border-radius: 20px;
-}
+} */
 /* .red:hover{
     position:relative;
     top:-25px;
@@ -55,13 +55,13 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
     border-radius: 20px;
 } */
-.blue{
+/* .blue{
    
     
     background-color:blue;
     
     border-radius: 20px;
-}
+} */
 /* .blue:hover{
     position:relative;
     top:-25px;
@@ -72,13 +72,13 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
     border-radius: 20px;
 } */
-.yellow{
+/* .yellow{
    
     
     background-color:yellow;
     
     border-radius: 20px;
-}
+} */
 /* .yellow:hover{
     position:relative;
     top:-25px;
@@ -89,13 +89,13 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
     border-radius: 20px;
 } */
-.green{
+/* .green{
    
     
     background-color:green;
     
     border-radius: 20px;
-}
+} */
 /* .green:hover{
     position:relative;
     top:-25px;
@@ -106,13 +106,13 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
     border-radius: 20px;
 } */
-.black{
+/* .black{
    
     
     background-color:black;
     
     border-radius: 20px;
-}
+} */
 /* .black:hover{
     position:relative;
     top:-25px;
@@ -123,13 +123,13 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
     border-radius: 20px;
 } */
-.orange{
+/* .orange{
    
     
     background-color:orange;
     
     border-radius: 20px;
-}
+} */
 /* .orange:hover{
     position:relative;
     top:-25px;
@@ -140,13 +140,13 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
     border-radius: 20px;
 } */
-.purple{
+/* .purple{
    
     
     background-color:purple;
     
     border-radius: 20px;
-}
+} */
 /* .purple:hover{
     position:relative;
     top:-25px;
@@ -157,13 +157,12 @@ h1, h4, .col-md-3>p,h5{
     z-index:999;
     border-radius: 20px;
 } */
-.pink{
-    /*
-     */
+/* .pink{
+   
     background-color:rgb(252, 70, 100);
-    /*  */
+   
     border-radius: 20px;
-}
+} */
 /* .pink:hover{
     position:relative;
     top:-25px;
@@ -176,27 +175,3 @@ h1, h4, .col-md-3>p,h5{
 } */
 
 
-/* footers */
-
-
-footer{
-    padding-top: 30px;
-    background-color:lightgray;
-    margin-top: 10px;
-    margin: 10px;
-}
-.icons i{
-    font-size: 60px;
-    padding-left: 40px;
-    padding-top: 50px;
-    margin-left: 60px;
-}
-phone{
-    margin: 20px;
-    padding-left:100px;
-  
-}
-#email{
-margin-top: 20px;
-padding-left:100px;
-}

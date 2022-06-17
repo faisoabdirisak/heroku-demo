@@ -6,9 +6,9 @@
     <div class="container-fluid numbers bg-light">
       <a class="btn btn-dark mt-5" href='{% url "home" %}'>Back</a>
         <h1 class="text-center">Computers</h1>
-    <div class="container-fluid shadow-sm p-3 mb-5 bg-body rounded">
+    <div class="container-fluid">
       <h3 class="text-center mt-5">Computer parts</h3>
-      <div class="row ">
+      <div class="row shadow-sm p-3 mb-5 bg-body rounded">
         <div class=" col shapes faiso">
           <img class="img-fluid" id="squareShape" src="{% static 'images/comp/mon.png' %}" onclick="mon()" alt="square">
           <audio id="mon" src="{% static 'audios/comp/monitor_1.mp3'%}"></audio>
@@ -25,7 +25,7 @@
           <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Mouse</h2>
         </div>
       </div>
-      <div class="row mt-5 me-1">
+      <div class="row mt-5 me-1 shadow-sm p-3 mb-5 bg-body rounded">
         <div class=" col shapes">
           <img class="img-fluid" id="squareShape" src="{% static 'images/comp/cpu.png' %}" onclick="cpu()" alt="oval">
           <audio id="cpu" src="{% static 'audios/comp/cpu.mp3' %}"></audio>
@@ -42,7 +42,7 @@
           <audio id="speak" src="{% static 'audios/comp/speakers.aac'%}"></audio>
           <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">SPEAKERS</h2>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 shadow-sm p-3 mb-5 bg-body rounded">
           <div class=" col shapes">
 
             <img class="img-fluid" id="squareShape" src="{% static 'images/comp/printer.png' %}" onclick="printer()" alt="star">
@@ -62,7 +62,7 @@
             <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">HEADPHONE</h2>
           </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 shadow-sm p-3 mb-5 bg-body rounded">
             <div class=" col shapes">
   
               <img class="img-fluid" id="squareShape" src="{% static 'images/comp/pendrive.png' %}" onclick="pen()" alt="star">
