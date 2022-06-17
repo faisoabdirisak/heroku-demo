@@ -113,3 +113,30 @@ function play() {
     var audio = document.getElementById("audiomaunt");
     audio.play();
   }
+
+
+  // seasons
+  function playsummer(){
+    var summer=document.getElementById('summer');
+    summer.play();
+  }
+
+  function playwinter(){
+    var winter=document.getElementById('winter');
+    winter.play();
+  }
+
+  function playsprint(){
+    var sprint=document.getElementById('sprint');
+    sprint.play();
+  }
+
+  function playautum(){
+    var autum=document.getElementById('autum');
+    autum.play();
+  }
+
+  function playall(){
+    var all=document.getElementById('all');
+    all.play();
+  }

@@ -3,7 +3,7 @@
 {% block content %}
   <div>
 
-    <div class="container-fluid numbers bg-light">
+    <div class="container-fluid ma shadow p-3 mb-5 bg-body rounded">
      <a class="btn btn-dark mt-5" href='{% url "home" %}'>Back</a>
       <h1 class="text-center">Mathematics </h1>
       <h3 class="text-center">Numbers</h3>
@@ -60,15 +60,77 @@
           <audio id="10" src="{% static 'audios/numbers/ten.mp3' %}"></audio>
           <h3 class="d-non display-5 text-center text-white bg-dark">Ten</h3>
         </div>
+        
       </div>
+
+      <div class=" d-flex justify-content-around mt-5">
+        <div class="nums" id=" " onclick="six()">
+          <p class=" display-3  fw-bolder">11</p>
+          <audio id="6" src="{% static 'audios/numbers/six.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Eleven</h3>
+        </div>
+        <div class="nums" id=" " onclick="seven()">
+          <p class=" display-3  fw-bolder">12</p>
+          <audio id="7" src="{% static 'audios/numbers/seven.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Tweleve</h3>
+        </div>
+        <div class="nums" id=" " onclick="eight()">
+          <p class=" display-3  fw-bolder">13</p>
+          <audio id="8" src="{% static 'audios/numbers/eight.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Thirteen</h3>
+        </div>
+        <div class="nums" id=" " onclick="nine()">
+          <p class=" display-3  fw-bolder">14</p>
+          <audio id="9" src="{% static 'audios/numbers/nine.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Fourteen</h3>
+        </div>
+        <div class="nums" id=" " onclick="ten()">
+          <p class=" display-3  fw-bolder">15</p>
+          <audio id="10" src="{% static 'audios/numbers/ten.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Fifteen</h3>
+        </div>
+        
+      </div>
+
+      <div class=" d-flex justify-content-around mt-5">
+        <div class="nums" id=" " onclick="six()">
+          <p class=" display-3  fw-bolder">16</p>
+          <audio id="6" src="{% static 'audios/numbers/six.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Sixteen</h3>
+        </div>
+        <div class="nums" id=" " onclick="seven()">
+          <p class=" display-3  fw-bolder">17</p>
+          <audio id="7" src="{% static 'audios/numbers/seven.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Seventeen</h3>
+        </div>
+        <div class="nums" id=" " onclick="eight()">
+          <p class=" display-3  fw-bolder">18</p>
+          <audio id="8" src="{% static 'audios/numbers/eight.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Eighteen</h3>
+        </div>
+        <div class="nums" id=" " onclick="nine()">
+          <p class=" display-3  fw-bolder">19</p>
+          <audio id="9" src="{% static 'audios/numbers/nine.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Nineteen</h3>
+        </div>
+        <div class="nums" id=" " onclick="ten()">
+          <p class=" display-3  fw-bolder">20</p>
+          <audio id="10" src="{% static 'audios/numbers/ten.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white bg-dark">Twenty</h3>
+        </div>
+        
+      </div>
+
+
     </div>
 
 
     <!-- shapes section begins here -->
 
-    <div class="container-fluid bg-light">
+    <div class="container-fluid ma shadow p-3 mb-5 bg-body rounded">
       <h3 class="text-center mt-5">Shapes</h3>
       <div class="row">
+        <h3 class="text-center mt-5">2D Shapes</h3>
         <div class=" col shapes">
           <img class="img-fluid" id="squareShape" src="{% static 'images/img-math/square.jpeg' %}" onclick="square()" alt="square">
           <audio id="square" src="{% static 'audios/shapes/square.mp3' %}"></audio>
@@ -123,10 +185,56 @@
           </div>
         </div>
       </div>
+
+
+      
+    </div>
+
+    <!-- 3d shapes -->
+    <div class="container-fluid ma shadow p-3 mb-5 bg-body rounded">
+      <h3 class="text-center mt-5">3D Shapes</h3>
+      <div class="row">
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/img-math/cone.png' %}" onclick="cone()" alt="square">
+          <audio id="cone" src="{% static 'audios/shapes/cone.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Cone</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/img-math/cube.png'%}" onclick="cube()" alt="circle">
+          <audio id="cube" src="{% static 'audios/shapes/cube.mp3'%}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Cube</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/img-math/cylinder2.png'%}" onclick="cylinder()" alt="triangle">
+          <audio id="cylinder" src="{% static 'audios/shapes/cylinder.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Cylinder</h2>
+        </div>
+      </div>
+      <div class="row mt-5 me-1">
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/img-math/sphere.png' %}" onclick="sphere()" alt="oval">
+          <audio id="sphere" src="{% static 'audios/shapes/sphere.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Sphere</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/img-math/cylinder.png' %}" onclick="cylinder()"
+            alt="rectangle">
+          <audio id="cylinder" src="{% static 'audios/shapes/cylinder.mp3' %}"></audio>
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Cylinder</h2>
+        </div>
+        <div class=" col shapes">
+          <img class="img-fluid" id="squareShape" src="{% static 'images/img-math/coverimage.png' %}"  alt="all">
+          <!-- <audio id="heart" src="{% static 'audios/shapes/heart.mp3'%}"></audio> -->
+          <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">All 3D</h2>
+        </div>
+   
+
+
+      
     </div>
 
     <!-- Lets do Some Maths begins here -->
-    <div class=" container-fluid bg-light text-center">
+    <div class=" container-fluid ma shadow p-3 mb-5 bg-body rounded text-center">
       <h1 class=" text-center display-3">Addition and Subtractions</h1>
      
       <main class=" d-flex justify-content-lg-between">
