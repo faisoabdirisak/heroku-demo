@@ -6,7 +6,296 @@
     <div class="container-fluid numbers">
         <a class="btn btn-dark mt-5" href='{% url "home" %}'>Back</a>
         <h1 class="text-center">ENVIRONMENT</h1>
+        <h1>Body Parts</h1>
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playhead()">
+                <img src="{% static 'images/body/head2.jpg' %}" class=" img-fluid">
+                    <audio id="head" src="{% static 'audios/body/head.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Head</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playhair()">
+                    <img src="{% static 'images/body/hair.jpg' %}" class=" img-fluid">
+                    <audio id="hair" src="{% static 'audios/body/hair.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Hair</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playeyes()">
+                    <img src="{% static 'images/body/eyes.jpg' %}" class=" img-fluid">
+                    <audio id="eyes" src="{% static 'audios/body/eyes.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Eyes</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playears()">
+                    <img src="{% static 'images/body/ears.png' %}" class=" img-fluid">
+                    <audio id="ears" src="{% static 'audios/body/ears.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Ears</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playarms()">
+                <img src="{% static 'images/body/arms.jpg' %}" class=" img-fluid">
+                    <audio id="arms" src="{% static 'audios/body/arms.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Arms</h2>
+                </div>
+            </div>
+
+            <div class="col-md-3 shapes">
+                <div onclick="playfeet()">
+                    <img src="{% static 'images/body/feet.png' %}" class=" img-fluid">
+                    <audio id="feet" src="{% static 'audios/body/feet.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Feet</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playhands()">
+                    <img src="{% static 'images/body/hands.jpg' %}" class=" img-fluid">
+                    <audio id="hands" src="{% static 'audios/body/hands.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">hands</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playhips()">
+                    <img src="{% static 'images/body/hips.jpg' %}" class=" img-fluid">
+                    <audio id="hips" src="{% static 'audios/body/hips.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Hips</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playlegs()">
+                <img src="{% static 'images/body/legs.png' %}" class=" img-fluid">
+                    <audio id="legs" src="{% static 'audios/body/legs.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Legs</h2>
+                </div>
+            </div>
+
+            <div class="col-md-3 shapes">
+                <div onclick="playmouth()">
+                    <img src="{% static 'images/body/mouth.jpg' %}" class=" img-fluid">
+                    <audio id="mouth" src="{% static 'audios/body/mouth.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Mouth</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playneck()">
+                    <img src="{% static 'images/body/neck.jpg' %}" class=" img-fluid">
+                    <audio id="neck" src="{% static 'audios/body/neck.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Neck</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playnose()">
+                    <img src="{% static 'images/body/nose.jpg' %}" class=" img-fluid">
+                    <audio id="nose" src="{% static 'audios/body/noise.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Nose</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playteeth()">
+                <img src="{% static 'images/body/teeth.jpg' %}" class=" img-fluid">
+                    <audio id="teeth" src="{% static 'audios/body/teeth.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Teeth</h2>
+                </div>
+            </div>
+
+            <div class="col-md-3 shapes">
+                <div onclick="playstomach()">
+                    <img src="{% static 'images/body/stomach.png' %}" class=" img-fluid">
+                    <audio id="stomach" src="{% static 'audios/body/stomach.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Stomach</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playshoulders()">
+                    <img src="{% static 'images/body/shoulders.jpg' %}" class=" img-fluid">
+                    <audio id="shoulders" src="{% static 'audios/body/shoulders.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Shoulders</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playtongue()">
+                    <img src="{% static 'images/body/tongue.jpg' %}" class=" img-fluid">
+                    <audio id="tongue" src="{% static 'audios/body/tongue.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Tongue</h2>
+                </div>
+            </div>
+        </div>
+
         
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div >
+                <img src="{% static 'images/body/all4.png' %}" class=" img-fluid">
+                    <!-- <audio id="teeth" src="{% static 'audios/body/teeth.mp4' %}"></audio> -->
+                    <!-- <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Teeth</h2> -->
+                </div>
+            </div>
+
+            <div class="col-md-3 shapes">
+                <div>
+                    <img src="{% static 'images/body/all.jpg' %}" class=" img-fluid">
+                    <!-- <audio id="stomach" src="{% static 'audios/body/stomach.mp4' %}"></audio> -->
+                    <!-- <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Stomach</h2> -->
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div >
+                    <img src="{% static 'images/body/all.jpg' %}" class=" img-fluid">
+                    <!-- <audio id="shoulders" src="{% static 'audios/body/shoulders.mp4' %}"></audio> -->
+                    <!-- <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Shoulders</h2> -->
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div >
+                    <img src="{% static 'images/body/all5.jpg' %}" class=" img-fluid">
+                    <!-- <audio id="tongue" src="{% static 'audios/body/tongue.mp4' %}"></audio> -->
+                    <!-- <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Tongue</h2> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- earth -->
+        <h1>Earth and Continents</h1>
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playearth()">
+                <img src="{% static 'images/earth/earth.gif' %}" class=" img-fluid">
+                    <audio id="earth" src="{% static 'audios/earth/earth.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Earth</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playafrica()">
+                    <img src="{% static 'images/earth/africa.jpg' %}" class=" img-fluid">
+                    <audio id="africa" src="{% static 'audios/earth/africa.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Africa</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playasia()">
+                    <img src="{% static 'images/earth/asia2.jpg' %}" class=" img-fluid">
+                    <audio id="asia" src="{% static 'audios/earth/asia.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Asia</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playeurope()">
+                    <img src="{% static 'images/earth/europe2.jpg' %}" class=" img-fluid">
+                    <audio id="europe" src="{% static 'audios/earth/europe.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Europe</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playsouth()">
+                <img src="{% static 'images/earth/south.jpg' %}" class=" img-fluid">
+                    <audio id="south" src="{% static 'audios/eart/south.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">South America</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playnorth()">
+                    <img src="{% static 'images/earth/north.jpg' %}" class=" img-fluid">
+                    <audio id="north" src="{% static 'audios/earth/north.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">North America</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playoceania()">
+                    <img src="{% static 'images/earth/oceania.jpg' %}" class=" img-fluid">
+                    <audio id="oceania" src="{% static 'audios/earth/oceania.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Ustrailia</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playantartica()">
+                    <img src="{% static 'images/earth/antartica2.jpg' %}" class=" img-fluid">
+                    <audio id="antartica" src="{% static 'audios/earth/antartica.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Antartica</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <h1>Oceans</h1>
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playindian()">
+                <img src="{% static 'images/earth/indian.jpg' %}" class=" img-fluid">
+                    <audio id="indian" src="{% static 'audios/earth/indian.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Indian Ocean</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playatlantic()">
+                    <img src="{% static 'images/earth/atlantic.jpg' %}" class=" img-fluid">
+                    <audio id="atlantic" src="{% static 'audios/earth/atlantic.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Atlantic Ocean</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playpacific()">
+                    <img src="{% static 'images/earth/pacific.jpg' %}" class=" img-fluid">
+                    <audio id="pacific" src="{% static 'audios/earth/pacific.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Pacific Ocean</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div onclick="playantartic()">
+                    <img src="{% static 'images/earth/antartica.jpg' %}" class=" img-fluid">
+                    <audio id="antartic" src="{% static 'audios/earth/antartic.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Antartic Ocean</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ma shadow p-3 mb-5 bg-body rounded">
+            <div class="col-md-3 hoov shapes">
+                <div onclick="playartctic">
+                <img src="{% static 'images/earth/artctic.jpg' %}" class=" img-fluid">
+                    <audio id="arctic" src="{% static 'audios/eart/artic.mp4' %}"></audio>
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Arctic Ocean</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div>
+                    <img src="{% static 'images/earth/oceans.jpg' %}" class=" img-fluid">
+                    <!-- <audio id="arctic" src="{% static 'audios/earth/artic.mp4' %}"></audio> -->
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Oceans</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div >
+                    <img src="{% static 'images/earth/oceans2.png' %}" class=" img-fluid">
+                    <!-- <audio id="asia" src="{% static 'audios/earth/asia.mp4' %}"></audio> -->
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">all Oceans</h2>
+                </div>
+            </div>
+            <div class="col-md-3 shapes">
+                <div>
+                    <img src="{% static 'images/earth/oceans3.jpg' %}" class=" img-fluid">
+                    <!-- <audio id="europe" src="{% static 'audios/earth/europe.mp4' %}"></audio> -->
+                    <h3 class="d-non display-5 text-center text-white  bg-dark" id="myquare">Oceans</h2>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- nutural -->
+
         <h4>NATURAL</h4>
         <div class="row ma shadow p-3 mb-5 bg-body rounded">
             <div class="col-md-3 hoov shapes">
@@ -173,22 +462,24 @@
                 </div>
             </div>
             <div class="col-md-3 ">
-                <div>
+                <div onclick="playall()">
                     <img src="{% static 'images/seasons/all seson.jpg' %}" class=" img-fluid"  style="height:250px;  width: 350px;">
-                    <audio id="audiohill" src="{% static 'audios/audio/hill.mp4'%}"></audio>
+                    <audio id="all" src="{% static 'audios/season/all.mp4'%}"></audio>
                    
                 </div>
             </div>
             <div class="col-md-3 ">
-                <div onclick="playmaunt()">
+                <div onclick="playall()">
                     <img src="{% static 'images/seasons/all.jpg'%}" class=" img-fluid"  style="height:250px;  width: 350px;">
-                    <audio id="audiomaunt" src="{% static 'audios/audio/moutains.mp4'%}"></audio>
+                    <audio id="all" src="{% static 'audios/season/all.mp4'%}"></audio>
                    
                 </div>
             </div>
             <div class="col-md-3 ">
+                <div onclick="playall()">
                 <img src="{% static 'images/seasons/monseasn.jpg'%}" class=" img-fluid"  style="height:250px; width: 350px;">
-                
+                <audio id="all" src="{% static 'audios/season/all.mp4'%}"></audio>
+            </div>
             </div>
         </div>
        
