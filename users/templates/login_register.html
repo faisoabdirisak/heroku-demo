@@ -3,7 +3,7 @@
 {% block content %}
 {% if page == 'register' %}
 <div class="full-screen-container">
-    <div class="login-container">
+    <div class="login-container card shadow p-3 mb-5 bg-body rounded">
        <!-- <i class="fas fa-chevron-left prev-btn"></i> -->
       <h3 class="login-title">Register User</h3>
       <form method="POST" action="{% url 'register' %}">
@@ -32,7 +32,7 @@
   {% else %}
 
   <div class="full-screen-container">
-    <div class="login-container">
+    <div class="login-container card shadow p-3 mb-5 bg-body rounded">
       <h3 class="login-title">Login User</h3>
       <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}

@@ -24,7 +24,7 @@
 
 body{
     height: 100vh;
-    background-color: var(--body-color);
+    background-color:#79caf2;
 }
 
 body.dark{
@@ -550,7 +550,7 @@ font-size: 0px;
         margin-top: 50px;
         /* height: 100vh; */
         
-        background-color: #A5D8E3;
+        /* background-color: #A5D8E3; */
     }
     /* .about h1{
         text-align: center;
@@ -590,9 +590,9 @@ font-size: 0px;
 
      /* contact */
 
-     .contact{
+     /* .contact{
         background:#79caf2;
-      }
+      } */
       /* .contact h1{
           text-align: center;
           margin-top: 40px;
@@ -622,18 +622,18 @@ font-size: 0px;
       .contact .row .form-container input, textarea{
         height:4rem;
         width:100%;
-        background:#fff;
+        background-color:#5D81D5;
         border:none;
         border-radius: 1rem;
         padding:0 1rem;
         margin:1rem 0;
-        color:var(--pink);
+        color:#fff;
         font-size: 1.7rem;
         transition: .2s linear;
       }
       
       .contact .row .form-container input:focus, textarea:focus{
-        border:.2rem solid var(--pink);
+        border:.2rem solid #157DE3;
       }
       
       .contact .row .form-container textarea{
@@ -645,7 +645,7 @@ font-size: 0px;
       
       .contact .row .form-container input[type="submit"]{
         width:17rem;
-        /* background:#00E77F; */
+        background-color:#004182;
         color:#fff;
         cursor: pointer;
         font-size: 2rem;
@@ -653,9 +653,9 @@ font-size: 0px;
       }
       
       .contact .row .form-container input[type="submit"]:hover{
-        background:#004182;
+        background:#053B71;
         color:#Fff;
-        border:.2rem solid var(--pink);
+        border:.2rem solid #004182;
       }
     
       @media (max-width:768px){
@@ -936,7 +936,7 @@ footer{
 
 .faisoo{
   margin-top: 500px;
-  background-color: #DEF4FF;
+  /* background-color: #DEF4FF; */
   padding: 50px 30px;
   min-width: 400px;
   width: 50%;
@@ -945,7 +945,7 @@ footer{
 
 
 .login-container {
-  background-color: #DEF4FF;
+  /* background-color: #DEF4FF; */
   margin-top: 170px;
   padding: 50px 30px;
   min-width: 400px;
@@ -994,7 +994,7 @@ footer{
   padding: 10px 30px;
   width: 100%;
   border-radius: 5px; 
-  background-color: #2D80FA;
+  background-color: #004182;
   border: 1px solid hsl(201, 100%, 50%);
   outline: none;
   font-size: 1.5em;
@@ -1003,6 +1003,8 @@ footer{
   margin-top: 20px;
   cursor: pointer;
 }
+
+
 
 /* .login-button:hover {
   background-color: hsla(201, 100%, 50%, 0.3)
@@ -1017,7 +1019,7 @@ footer{
 }
 
 #act{
-  color: #fff;
+  color: #004182;
 }
 
 
@@ -1026,8 +1028,8 @@ footer{
   top:-120%;
   right:2rem;
   padding:.5rem 1.5rem;
-  font-size: 4rem;
-  background-color:red;
+  font-size: 2rem;
+  background-color:#010718;
   color:#fff;
   border-radius: .5rem;
   transition: 1s linear;
@@ -1042,7 +1044,7 @@ footer{
   position: fixed;
   top:0; left:0;
   z-index: 10000;
-  background-color:rgb(232, 225, 225);
+  background-color:#004182;
   display: flex;
   align-items: center;
   justify-content: center;
