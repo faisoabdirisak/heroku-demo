@@ -24,7 +24,7 @@
 
 body{
     height: 100vh;
-    background-color: var(--body-color);
+    background-color:#79caf2;
 }
 
 body.dark{
@@ -458,8 +458,17 @@ body.dark .search-field i{
   border-radius: 10px;
   height: 400px;
   box-shadow: 4px 15px 35px rgba(14, 0, 0, 0.865);
+  animation:float 3s linear infinite;
   
   
+}
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
 }
 .cont a{
   text-decoration: none;
@@ -541,7 +550,7 @@ font-size: 0px;
         margin-top: 50px;
         /* height: 100vh; */
         
-        background-color: #A5D8E3;
+        /* background-color: #A5D8E3; */
     }
     /* .about h1{
         text-align: center;
@@ -559,6 +568,7 @@ font-size: 0px;
      
      .about .row .image img{
         width: 100%;
+        animation:float 3s linear infinite;
      }
      
      .about .row .content{
@@ -580,9 +590,9 @@ font-size: 0px;
 
      /* contact */
 
-     .contact{
+     /* .contact{
         background:#79caf2;
-      }
+      } */
       /* .contact h1{
           text-align: center;
           margin-top: 40px;
@@ -601,6 +611,7 @@ font-size: 0px;
       .contact .row.image img{
         width: 40vw;
         height:60vh;
+        animation:float 3s linear infinite;
       }
       
       .contact .row .form-container{
@@ -611,18 +622,18 @@ font-size: 0px;
       .contact .row .form-container input, textarea{
         height:4rem;
         width:100%;
-        background:#fff;
+        background-color:#5D81D5;
         border:none;
         border-radius: 1rem;
         padding:0 1rem;
         margin:1rem 0;
-        color:var(--pink);
+        color:#fff;
         font-size: 1.7rem;
         transition: .2s linear;
       }
       
       .contact .row .form-container input:focus, textarea:focus{
-        border:.2rem solid var(--pink);
+        border:.2rem solid #157DE3;
       }
       
       .contact .row .form-container textarea{
@@ -634,7 +645,7 @@ font-size: 0px;
       
       .contact .row .form-container input[type="submit"]{
         width:17rem;
-        /* background:#00E77F; */
+        background-color:#004182;
         color:#fff;
         cursor: pointer;
         font-size: 2rem;
@@ -642,9 +653,9 @@ font-size: 0px;
       }
       
       .contact .row .form-container input[type="submit"]:hover{
-        background:#004182;
+        background:#053B71;
         color:#Fff;
-        border:.2rem solid var(--pink);
+        border:.2rem solid #004182;
       }
     
       @media (max-width:768px){
@@ -925,7 +936,7 @@ footer{
 
 .faisoo{
   margin-top: 500px;
-  background-color: #DEF4FF;
+  /* background-color: #DEF4FF; */
   padding: 50px 30px;
   min-width: 400px;
   width: 50%;
@@ -934,7 +945,7 @@ footer{
 
 
 .login-container {
-  background-color: #DEF4FF;
+  /* background-color: #DEF4FF; */
   margin-top: 170px;
   padding: 50px 30px;
   min-width: 400px;
@@ -983,7 +994,7 @@ footer{
   padding: 10px 30px;
   width: 100%;
   border-radius: 5px; 
-  background-color: #2D80FA;
+  background-color: #004182;
   border: 1px solid hsl(201, 100%, 50%);
   outline: none;
   font-size: 1.5em;
@@ -992,6 +1003,8 @@ footer{
   margin-top: 20px;
   cursor: pointer;
 }
+
+
 
 /* .login-button:hover {
   background-color: hsla(201, 100%, 50%, 0.3)
@@ -1006,7 +1019,7 @@ footer{
 }
 
 #act{
-  color: #fff;
+  color: #004182;
 }
 
 
@@ -1015,8 +1028,8 @@ footer{
   top:-120%;
   right:2rem;
   padding:.5rem 1.5rem;
-  font-size: 4rem;
-  background-color:red;
+  font-size: 2rem;
+  background-color:#010718;
   color:#fff;
   border-radius: .5rem;
   transition: 1s linear;
@@ -1031,7 +1044,7 @@ footer{
   position: fixed;
   top:0; left:0;
   z-index: 10000;
-  background-color:rgb(232, 225, 225);
+  background-color:#004182;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1048,4 +1061,118 @@ footer{
 }
 .ma{
   margin-top: 10px;
+}
+
+/* reviews */
+
+
+.reviews-slider .slides{
+  border-radius: .5rem;
+  background-color:#004182;
+  padding:2rem;
+  margin-bottom: 4rem;
+  user-select: none;
+}
+
+.reviews-slider .slides p{
+  line-height: 2;
+  font-size: 1.6rem;
+  color:white;
+}
+
+.reviews-slider .slides .user{
+  display: flex;
+  align-items: center;
+  gap:1.5rem;
+  margin-top: 1.5rem;
+}
+
+.reviews-slider .slides .user img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews-slider .slides .user h3{
+  font-size: 2rem;
+  color:white;
+  margin-bottom: .7rem;
+}
+
+.reviews-slider .slides .user .stars i{
+  font-size: 1.5rem;
+  color:#000116;
+}
+
+
+/* tutors */
+.teachers{
+  /* background-color: #004182; */
+  margin:20px 5px;
+}
+
+.teachers .slides{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  user-select: none;
+}
+
+.teachers .slides img{
+  height: 50rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.teachers .slides h3{
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color:#053B71;
+}
+
+.teachers .slides .share{
+  position: absolute;
+  top:1rem; left:-10rem;
+}
+
+.teachers .slides:hover .share{
+  left: 2rem;
+}
+
+.teachers .slides .share a{
+  display: block;
+  margin-top: 1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: .5rem;
+  background-color: white;
+  color:black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.teachers .slides .share a:hover{
+  background-color:#000116;
+  color:white;
+}
+
+.reviews-slider .slide{
+  border-radius: .5rem;
+  background-color: #004182;
+  padding:2rem;
+  margin-bottom: 4rem;
+  user-select: none;
+}
+
+
+.swiper-pagination-bullet{
+  background-color:#2D80FA;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #000116;
 }

@@ -3,8 +3,15 @@
 {% load static %}
 
 {% block content %}
+    <!-- scroll top button  -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
 
-<section>
+    <!-- loader  -->
+    <div class="loader-container">
+        <img src="{% static 'images/comp-loader.gif'%}" alt="">
+    </div>
+
+<section id="home">
     <div class="slider">
         <div class="slide active">
           <img src="{% static 'images/pics1.jpg' %}" alt="">
@@ -56,7 +63,7 @@
     </section> 
 
 <!-- counter -->
-<section class="count">
+<section class="count mt-10">
 
     <div class="box-container">
  
@@ -99,9 +106,9 @@
 
  <section id="subject">
    
-   <h1>OUR ACTIVITIES</h1>
+   <h1>OUR <span id="act">ACTIVITIES</span></h1>
   
-   <article class="subje">
+   <article class="subje" id="activities">
     <div class="cont"><a href="{% url 'read' %}">
         <div class="title read"><h2>Reading and Language arts</h2></div>
         <div class="cont2">
@@ -225,12 +232,12 @@
 </section>
 
 <section class="about" id="about">
-    <h1 id="About">About Us</h1>
+    <h1 id="About">ABOUT <span id="act">US</span></h1>
   
     <div class="row">
-  
+
        <div class="image">
-          <img src="{% static 'images/about-img.svg'%}" alt="">
+          <img src="{% static 'images/C:\Users\user\Desktop\ItalantProject\edu-child\GameOfLearners1\static\images\about3-removebg-preview_16.png'%}" alt="">
        </div>
   
        <div class="content">
@@ -247,15 +254,219 @@
   
   </section>
 
+  <section class="teachers" id="teachers">
+
+    <h1 class="heading">EXPERT <span id="act">TEACHERS</span></h1>
+ 
+    <div class="swiper teachers-slider">
+ 
+       <div class="swiper-wrapper">
+ 
+          <div class="swiper-slide slides">
+             <img src="{% static 'images/fas.JPG'%}" alt="">
+             <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+             </div>
+             <h3>FAISO</h3>
+          </div>
+          
+          <div class="swiper-slide slides">
+             <img src="{% static 'images/fas.JPG'%}" alt="">
+             <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+             </div>
+             <h3>FAISO</h3>
+          </div>
+ 
+          <div class="swiper-slide slides">
+             <img src="{% static 'images/fas.JPG'%}" alt="">
+             <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+             </div>
+             <h3>FAISO</h3>
+          </div>
+ 
+          <div class="swiper-slide slides">
+             <img src="{% static 'images/fas.JPG'%}" alt="">
+             <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+             </div>
+             <h3>Faiso Abdirisak</h3>
+          </div>
+ 
+          <div class="swiper-slide slides">
+             <img src="{% static 'images/fas.JPG'%}" alt="">
+             <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+             </div>
+             <h3>FAISO</h3>
+          </div>
+ 
+          <div class="swiper-slide slides">
+             <img src="{% static 'images/fas.JPG'%}" alt="">
+             <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+             </div>
+             <h3>FAISO</h3>
+          </div>
+ 
+       </div>
+ 
+       <div class="swiper-pagination"></div>
+ 
+    </div>
+ 
+ </section>
+
+
+ <!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+  <h1 class="heading"> CLIENT'S <span id="act">REVIEWS</span></h1>
+
+  <div class="swiper reviews-slider">
+
+     <div class="swiper-wrapper">
+
+        <div class="swiper-slide slides">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+           <div class="user">
+              <img src="{% static 'images/read.jpg'%}" alt="">
+              <div class="user-info">
+                 <h3>Faiso Abdirisak</h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="swiper-slide slides">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+           <div class="user">
+              <img src="{% static 'images/read.jpg'%}" alt="">
+              <div class="user-info">
+                 <h3>Faiso Abdirisak </h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="swiper-slide slides">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+           <div class="user">
+              <img src="{% static 'images/read.jpg'%}" alt="">
+              <div class="user-info">
+                 <h3>Faiso Abdirisak</h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="swiper-slide slides">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+           <div class="user">
+              <img src="{% static 'images/read.jpg'%}" alt="">
+              <div class="user-info">
+                 <h3>Faiso Abdirisak</h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="swiper-slide slides">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+           <div class="user">
+              <img src="{% static 'images/read.jpg'%}" alt="">
+              <div class="user-info">
+                 <h3>Faiso Abdirisak</h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="swiper-slide slides">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+           <div class="user">
+              <img src="{% static 'images/read.jpg'%}" alt="">
+              <div class="user-info">
+                 <h3>Faiso Abdirisak</h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+     </div>
+
+     <div class="swiper-pagination"></div>
+
+  </div>
+
+</section>
+
+
   <section class="contact" id="contact">
 
-    <h1 class="heading">contact us</h1>
+    <h1 class="heading"><span id='act'>CONTACT</span> US</h1>
     <h3 class="title">we love conversatios, lets talk.</h3>
     
     <div class="row">
     <div class="col">
         <div class="image">
-            <img src="{% static 'images/contact-img.svg' %}" alt="">
+            <img src="{% static 'images/contttt-removebg-preview.png' %}" alt="">
         </div>
     </div>
     <div class="col">
