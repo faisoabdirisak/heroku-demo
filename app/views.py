@@ -6,7 +6,6 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def home(request):
-   
     return render(request, 'school/home.html')
 
 @login_required(login_url='login')

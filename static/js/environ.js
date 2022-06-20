@@ -38,6 +38,46 @@ function play() {
     var audio = document.getElementById("audio7");
     audio.play();
   }
+  // gray
+  function play8() {
+    var audio = document.getElementById("audio8");
+    audio.play();
+  }
+  // brown
+  function play9() {
+    var audio = document.getElementById("audio9");
+    audio.play();
+  }
+  // gold
+  function play10() {
+    var audio = document.getElementById("audio10");
+    audio.play();
+  }
+  // white
+  function play11() {
+    var audio = document.getElementById("audio11");
+    audio.play();
+  }
+  // indigo
+  function play12() {
+    var audio = document.getElementById("audio12");
+    audio.play();
+  }
+  // violet
+  function play13() {
+    var audio = document.getElementById("audio13");
+    audio.play();
+  }
+  // silver
+  function play14() {
+    var audio = document.getElementById("audio14");
+    audio.play();
+  }
+  // light-blue
+  function play15() {
+    var audio = document.getElementById("audio15");
+    audio.play();
+  }
   // sun
   function playsun() {
     var audio = document.getElementById("audiosun");
