@@ -1149,14 +1149,14 @@ footer{
   width: 4.5rem;
   line-height: 4.5rem;
   border-radius: .5rem;
-  background-color: white;
-  color:black;
+  background-color:#000116;
+  color:white;
   text-align: center;
   font-size: 2rem;
 }
 
 .teachers .slides .share a:hover{
-  background-color:#000116;
+  background-color:#004182;
   color:white;
 }
 
