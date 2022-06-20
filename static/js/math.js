@@ -302,3 +302,45 @@ function key(){
   var key = document.getElementById('key');
   key.play();
 }
+
+
+function playmond(){
+  var mond = document.getElementById('mond');
+  mond.play();
+}
+
+
+function playtus(){
+  var tus = document.getElementById('tus');
+  tus.play();
+}
+
+
+function playwed(){
+  var wed = document.getElementById('wed');
+  wed.play();
+}
+
+
+function playthur(){
+  var thur = document.getElementById('thur');
+  thur.play();
+}
+
+
+function playfrid(){
+  var frid = document.getElementById('frid');
+  frid.play();
+}
+
+
+function playsat(){
+  var sat = document.getElementById('sat');
+  sat.play();
+}
+
+
+function playsund(){
+  var sund = document.getElementById('sund');
+  sund.play();
+}
