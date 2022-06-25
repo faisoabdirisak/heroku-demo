@@ -29,6 +29,6 @@ modalBtns.forEach(modalBtn=> modalBtn.addEventListener('click', ()=>{
 
     startBtn.addEventListener('click', ()=>{
         // window.location.href = url+pk
-        window.location.href = "http://127.0.0.1:8000/quizes/"+pk+'/'
+        window.location.href = "/quizes/"+pk+'/'
     })
 }))
