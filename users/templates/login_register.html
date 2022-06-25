@@ -6,6 +6,7 @@
     <div class="login-container card shadow p-3 mt-15 bg-body rounded">
        <!-- <i class="fas fa-chevron-left prev-btn"></i> -->
       <h3 class="login-title">Register User</h3>
+      {% include 'alert.html' %}
       <form method="POST" action="{% url 'register' %}">
         {% csrf_token %}
         {% for field in form %}
@@ -22,6 +23,8 @@
           <input type="password">
         </div> -->
         <button type="submit" class=" btn btn-primary login-button">Sign In</button>
+
+      
       </form>
       <div class="auth__alternative">
         <p>Already have an Account?</p>
@@ -32,8 +35,10 @@
   {% else %}
 
   <div class="full-screen-container">
+   
     <div class="login-container card shadow p-3 mb-5 bg-body rounded">
       <h3 class="login-title">Login User</h3>
+      {% include 'alert.html' %}
       <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}
         <div class="input-group">
@@ -46,6 +51,8 @@
         </div>
         <button type="submit" class=" btn btn-primary login-button">Sign In</button>
         <a href="{% url 'reset_password' %}">Forget Password?</a>
+
+        
       </form>
       <div class="auth__alternative">
         <p>Don’t have an Account?</p>

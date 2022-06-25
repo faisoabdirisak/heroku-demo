@@ -10,6 +10,7 @@ urlpatterns = [
     path('computer/', views.comp, name='comp'),
     path('religion/', views.religion, name='religion'),
    
+    # path('submit_review/', views.submit_review, name='submit_review'),
     
     
 ]
