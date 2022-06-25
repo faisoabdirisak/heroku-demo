@@ -22,10 +22,10 @@ def quiz_data_view(request, pk):
         answers = []
         for a in q.get_answers():
             answers.append(a.text)
-        questions.append({str(q): answers})
-    return JsonResponse({
-        'data': questions,
-        'time': quiz.time,
+            questions.append({str(q): answers})
+        return JsonResponse({
+            'data': questions,
+            'time': quiz.time,
     })
 
 def is_ajax(request):

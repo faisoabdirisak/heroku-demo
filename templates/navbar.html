@@ -22,9 +22,10 @@
                 <li><a href="#contact">Contact</a></li> -->
                 
                 {%  if request.user.is_authenticated %}
-                <li><a href="https://127.0.0.1:8000/quizes/">Assignments</a></li>
-                <li><a href="https://127.0.0.1:8000/results/">Performance</a></li>
-              
+                <li><a href="{% url 'QuizList' %}">Assignments</a></li>
+                <li><a href="{% url 'results' %}">Performance</a></li>
+                <!-- <li><a href="https://127.0.0.1:8000/results/">Performance</a></li> -->
+                
                 <li><a href="{% url 'account' %}">account</a></li> 
                 <li><a href="{% url 'logout' %}">logout</a></li> 
                 {% else%}
