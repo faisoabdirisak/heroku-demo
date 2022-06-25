@@ -22,8 +22,8 @@
                 <li><a href="#contact">Contact</a></li> -->
                 
                 {%  if request.user.is_authenticated %}
-                <li><a href="{% url 'QuizList' %}">Assignments</a></li>
-                <li><a href="{% url 'results' %}">Performance</a></li>
+                <li><a href="/quizes/">Assignments</a></li>
+                <li><a href="/results/">Performance</a></li>
                 <!-- <li><a href="https://127.0.0.1:8000/results/">Performance</a></li> -->
                 
                 <li><a href="{% url 'account' %}">account</a></li> 
