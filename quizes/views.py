@@ -2,7 +2,6 @@ from django.shortcuts import render
 from .models import Quiz
 from django.views.generic import ListView
 from django.http import JsonResponse
-from django.shortcuts import HttpResponse
 from questions.models import Question, Answer
 from results.models import Result
 
@@ -14,7 +13,6 @@ def quiz_view(request, pk):
     quiz = Quiz.objects.get(pk=pk)
     return render(request, 'quizes/quiz.html', {'obj': quiz})
 
-
 def quiz_data_view(request, pk):
     quiz = Quiz.objects.get(pk=pk)
     questions = []
@@ -22,10 +20,10 @@ def quiz_data_view(request, pk):
         answers = []
         for a in q.get_answers():
             answers.append(a.text)
-            questions.append({str(q): answers})
-        return JsonResponse({
-            'data': questions,
-            'time': quiz.time,
+        questions.append({str(q): answers})
+    return JsonResponse({
+        'data': questions,
+        'time': quiz.time,
     })
 
 def is_ajax(request):
